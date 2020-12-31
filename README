@@ -2,6 +2,12 @@ techem-gui.grc - broken gui frontend for gnuradio
 baseband.c - fast generic baseband decoder
 decode.py - techem heat meter specific standalone decoder
 water.py - application layer decoder (pipe baseband into this)
-capture.py  - gnuradio capture - output is 3.6GB/h (pipe this into decode or
-baseband)
+capture.py  - gnuradio capture - output is 3.6GB/h (pipe this into decode or baseband)
 techem.grc - gnuradio schema for capture.py
+
+Update 31/12/2020:
+- Added files for new version of GNURadio newtechem-gui.grc
+- Added screenshot of the GUI in operation
+- Added "partac" capture of Green Energy Options Ltd. GEO MINIM electricity meter supplied by npower in the UK
+- Added enery_monitor_user_guide.pdf
+*Note: these meters have a pairing button that when pressed will send an initial ID key to the receiver, probably used to encode/decode the frames. British Gas meters of the same model-age seem to use different encoding (https://6thplanet.com/store/technical/hohominim.html).
